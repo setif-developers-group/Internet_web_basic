@@ -18,7 +18,7 @@ def root():
 
 @app.get('/random')
 def random_val()->RandomInt:
-    i = random.randint(0,255)
+    i = random.randint()
     r = RandomInt(value=i)
     return r
 

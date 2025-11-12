@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <h1>Leave a feed back</h1>
+
+    <div id="card">
+        <form id="feedbackForm">
+        <input type="number" name="rating" id="rating" placeholder="Rating (1-10)" min="1" max="10" required>
+        <input type="text" name="feedback" id="feedback" placeholder="Your feedback" required>
+        <input type="text" name="best_feature" id="best_feature" placeholder="what you liked about the workshop?" required>
+        <input type="text" name="improvements" id="improvements" placeholder="What can be improved?" required>
+        <select name="next_workshop" id="next_workshop" required>
+            <option value="" disabled selected>What workshop would you like next?</option>
+            <option value="frontend">Front-End</option>
+            <option value="backend">Back-End</option>
+            <option value="python">Python</option>
+            <option value="explore_more">Explore More Fields</option>
+            <option value="none">I don't want any more workshops</option>
+        </select>
+        <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
